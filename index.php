@@ -23,8 +23,9 @@
             foreach ($item as $key => $value) {
                 // var_dump($key);
 
-                // condizione che sostituisce _ sulla key della distanza
-                str_replace('_', ' ', $key);
+                // sostituisce _ sulla key della distanza
+                $newDistance = str_replace('_', ' ', $key);
+                $key = $newDistance;
 
                 // condizione che sostituisce valore del parcheggio
                 if ($value === true) {
